@@ -13,8 +13,9 @@ connection.connect((err) => {
         console.log("Conexion fallida!");
     }
 });
+module.exports = connection;
+/* connection.query("SELECT * FROM  tblproductos", function(err, res) {
+        console.log(res);
+    }); */
 
-connection.query("SELECT * FROM  tblproductos", function(err, res) {
-    console.log(res);
-});
-connection.end();
+//connection.end();
